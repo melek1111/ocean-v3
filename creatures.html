@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Sea Creatures — Deep Ocean Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-creatures">
+
+  <div class="ocean-bg">
+    <div class="bubble" style="--x:8%;--d:11s;--s:0.45rem;--delay:0.5s"></div>
+    <div class="bubble" style="--x:30%;--d:9s;--s:0.3rem;--delay:2s"></div>
+    <div class="bubble" style="--x:52%;--d:13s;--s:0.55rem;--delay:1s"></div>
+    <div class="bubble" style="--x:72%;--d:8s;--s:0.4rem;--delay:3.5s"></div>
+    <div class="bubble" style="--x:90%;--d:10s;--s:0.6rem;--delay:0s"></div>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span>DeepSea</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="zones.html">Ocean Zones</a></li>
+      <li><a href="creatures.html" class="active">Creatures</a></li>
+      <li><a href="expeditions.html">Expeditions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="page-hero">
+      <div class="container">
+        <p class="hero-eyebrow">Life in the Abyss</p>
+        <h1>Deep Sea <em>Creatures</em></h1>
+        <p class="page-hero-sub">Evolution pushed to extremes. These organisms have adapted to conditions no surface life could survive.</p>
+      </div>
+    </header>
+
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Creatures</button>
+          <button class="filter-btn" data-filter="bioluminescent">✨ Bioluminescent</button>
+          <button class="filter-btn" data-filter="predator">🦷 Predators</button>
+          <button class="filter-btn" data-filter="deep">🌑 Ultra-Deep</button>
+          <button class="filter-btn" data-filter="weird">👁️ Bizarre</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="creatures-gallery">
+      <div class="container">
+        <div class="creatures-grid" id="creaturesGrid">
+
+          <article class="creature-profile" data-tags="bioluminescent predator">
+            <div class="profile-glow"></div>
+            <div class="profile-header">
+    <img src="images/anglerfish.jpg" class="creature-photo" alt="Anglerfish">
+    <div class="profile-depth-badge">200 – 2,000m</div>
+</div>
+            <h3>Anglerfish</h3>
+            <p class="creature-sci">Lophiiformes</p>
+            <p>One of the ocean's most iconic deep-sea dwellers. The female dangles a bioluminescent lure above her enormous jaws — any creature drawn to the light becomes dinner. Males are tiny parasites that fuse to the female permanently.</p>
+            <div class="creature-tags">
+              <span class="tag">Bioluminescent</span>
+              <span class="tag">Predator</span>
+            </div>
+          </article>
+
+          <article class="creature-profile" data-tags="predator deep">
+            <div class="profile-glow"></div>
+            <div class="profile-header">
+              <img src="images/goblin-shark.jpg" class="creature-photo">
+              <div class="profile-depth-badge">270 – 1,800m</div>
+            </div>
+            <h3>Goblin Shark</h3>
+            <p class="creature-sci">Mitsukurina owstoni</p>
+            <p>A living fossil with a protruding snout and jaws that snap forward like a ballistic weapon. Its translucent pink skin is caused by blood vessels close to the surface. Rarely encountered alive by humans.</p>
+            <div class="creature-tags">
+              <span class="tag">Predator</span>
+              <span class="tag">Ultra-Deep</span>
+            </div>
+          </article>
+
+          <article class="creature-profile" data-tags="bioluminescent weird">
+            <div class="profile-glow"></div>
+            <div class="profile-header">
+              <img src="images/siphonophore.jpg" class="creature-photo">
+              <div class="profile-depth-badge">0 – 900m</div>
+            </div>
+            <h3>Siphonophore</h3>
+            <p class="creature-sci">Siphonophorae</p>
+            <p>Not one animal but a superorganism — a colony of thousands of individual zooids acting as one being. Some species stretch over 40 meters, making them the longest organisms on Earth. They produce spectacular bioluminescent displays.</p>
+            <div class="creature-tags">
+              <span class="tag">Bioluminescent</span>
+              <span class="tag">Bizarre</span>
+            </div>
+          </article>
+
+          <article class="creature-profile" data-tags="deep weird">
+            <div class="profile-glow"></div>
+            <div class="profile-header">
+             <img src="images/dumbo-octopus.jpg" class="creature-photo">
+              <div class="profile-depth-badge">1,000 – 7,000m</div>
+            </div>
+            <h3>Dumbo Octopus</h3>
+            <p class="creature-sci">Grimpoteuthis</p>
+            <p>Named after Disney's Dumbo for its ear-like fins used for propulsion. It's the deepest-living octopus genus known. It swallows prey whole and lives a slow, quiet existence in the permanent dark, occasionally spotted by deep-sea ROVs.</p>
+            <div class="creature-tags">
+              <span class="tag">Ultra-Deep</span>
+              <span class="tag">Bizarre</span>
+            </div>
+          </article>
+
+          <article class="creature-profile" data-tags="bioluminescent weird">
+            <div class="profile-glow"></div>
+            <div class="profile-header">
+              <img src="images/firefly-squid.jpg" class="creature-photo">
+              <div class="profile-depth-badge">300 – 600m</div>
+            </div>
+            <h3>Firefly Squid</h3>
+            <p class="creature-sci">Watasenia scintillans</p>
+            <p>Tiny but spectacular — this 7cm squid produces vivid blue bioluminescence across its entire body. When millions gather in Japan's Toyama Bay to spawn, they light the sea like an underwater aurora. It has trichromatic vision — unique among cephalopods.</p>
+            <div class="creature-tags">
+              <span class="tag">Bioluminescent</span>
+              <span class="tag">Bizarre</span>
+            </div>
+          </article>
+
+          <article class="creature-profile" data-tags="predator deep weird">
+            <div class="profile-glow"></div>
+            <div class="profile-header">
+              <img src="images/black-swallower.jpg" class="creature-photo">
+              <div class="profile-depth-badge">200 – 5,000m</div>
+            </div>
+            <h3>Black Swallower</h3>
+            <p class="creature-sci">Chiasmodon niger</p>
+            <p>A 25cm fish capable of consuming prey more than 10 times its own mass. Its stomach expands enormously to accommodate meals whole. Sometimes it swallows prey so large that decomposition gasses bloat it to the surface before it can digest.</p>
+            <div class="creature-tags">
+              <span class="tag">Predator</span>
+              <span class="tag">Bizarre</span>
+            </div>
+          </article>
+
+          <article class="creature-profile" data-tags="deep">
+            <div class="profile-glow"></div>
+            <div class="profile-header">
+              <img src="images/mariana-snailfish.jpg" class="creature-photo">
+              <div class="profile-depth-badge">6,198 – 8,178m</div>
+            </div>
+            <h3>Mariana Snailfish</h3>
+            <p class="creature-sci">Pseudoliparis swirei</p>
+            <p>The deepest fish ever discovered, found in the Mariana Trench. Pale, translucent, and gelatinous — it has no scales and no hard bones. Feeds on tiny crustaceans. Its body is adapted for survival under 800+ atmospheres of pressure.</p>
+            <div class="creature-tags">
+              <span class="tag">Ultra-Deep</span>
+            </div>
+          </article>
+
+          <article class="creature-profile" data-tags="bioluminescent predator">
+            <div class="profile-glow"></div>
+            <div class="profile-header">
+              <img src="images/viperfish.jpg" class="creature-photo">
+              <div class="profile-depth-badge">200 – 4,000m</div>
+            </div>
+            <h3>Viperfish</h3>
+            <p class="creature-sci">Chauliodus sloani</p>
+            <p>One of the fiercer predators of the deep. Its fang-like teeth are so long they cannot close its mouth. A photophore on a dorsal spine glows to lure prey close — then strikes at extraordinary speed. Can go days between meals in the scarce deep ocean.</p>
+            <div class="creature-tags">
+              <span class="tag">Bioluminescent</span>
+              <span class="tag">Predator</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-icon">⬡</span>
+          <strong>DeepSea Explorer</strong>
+          <p>Illuminating the darkness since 2024.</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="zones.html">Ocean Zones</a>
+          <a href="creatures.html">Creatures</a>
+          <a href="expeditions.html">Expeditions</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">&copy; 2026 Deep Ocean Explorer. All depths reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

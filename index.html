@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Deep Ocean Explorer</title>
+</head>
+<body class="page-home">
+
+  <div class="ocean-bg">
+    <div class="bubble" style="--x:10%;--d:8s;--s:0.4rem;--delay:0s"></div>
+    <div class="bubble" style="--x:25%;--d:12s;--s:0.6rem;--delay:2s"></div>
+    <div class="bubble" style="--x:40%;--d:9s;--s:0.3rem;--delay:1s"></div>
+    <div class="bubble" style="--x:55%;--d:11s;--s:0.5rem;--delay:3s"></div>
+    <div class="bubble" style="--x:70%;--d:7s;--s:0.4rem;--delay:0.5s"></div>
+    <div class="bubble" style="--x:85%;--d:13s;--s:0.7rem;--delay:4s"></div>
+    <div class="bubble" style="--x:92%;--d:10s;--s:0.35rem;--delay:1.5s"></div>
+    <div class="bubble" style="--x:5%;--d:15s;--s:0.55rem;--delay:6s"></div>
+    <div class="light-ray" style="--rx:20%;--rr:-15deg;--ro:0.07"></div>
+    <div class="light-ray" style="--rx:50%;--rr:5deg;--ro:0.05"></div>
+    <div class="light-ray" style="--rx:75%;--rr:20deg;--ro:0.06"></div>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span>DeepSea</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="zones.html">Ocean Zones</a></li>
+      <li><a href="creatures.html">Creatures</a></li>
+      <li><a href="expeditions.html">Expeditions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <img src="images/hero-ocean.jpg" class="hero-bg" alt="Deep ocean">
+      <div class="hero-overlay">
+        <p class="hero-tag">WELCOME TO THE ABYSS</p>
+        <h1>Explore The<br><em>Deep Ocean</em></h1>
+        <p>Discover mysterious creatures, hidden trenches, and the last unexplored frontier on Earth.</p>
+        <a href="zones.html" class="btn btn-primary">Begin Descent</a>
+      </div>
+      <div class="scroll-indicator">Scroll</div>
+    </section>
+
+    <section class="gallery-title">
+      <h2>Ocean <em>Highlights</em></h2>
+      <p>Explore some of the most breathtaking scenes beneath the waves.</p>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery-card">
+        <img src="images/jellyfish.jpg" alt="Jellyfish">
+        <h3>Jellyfish</h3>
+      </div>
+      <div class="gallery-card">
+        <img src="images/coral.jpg" alt="Coral Reef">
+        <h3>Coral Reef</h3>
+      </div>
+      <div class="gallery-card">
+        <img src="images/diver.jpg" alt="Diving">
+        <h3>Diving</h3>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div>
+        <h2>71%</h2>
+        <p>of Earth covered by ocean</p>
+      </div>
+      <div>
+        <h2>11,000m</h2>
+        <p>deepest known point</p>
+      </div>
+      <div>
+        <h2>80%</h2>
+        <p>still unexplored</p>
+      </div>
+    </section>
+
+    <section class="intro-section">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-text">
+            <h2 class="section-title">An Alien World <br><em>Beneath Our Feet</em></h2>
+            <p>The deep ocean covers more than 65% of Earth's surface yet remains more mysterious than the surface of Mars. No sunlight penetrates its depths. Pressure reaches 1,000 atmospheres. And yet — life flourishes in extraordinary forms.</p>
+            <p>Join us as we chart the layers of this vast unknown, from the sunlit shallows to the hadal trenches where the seafloor becomes a world unto itself.</p>
+            <a href="zones.html" class="btn btn-outline">Explore the Zones →</a>
+          </div>
+          <div class="intro-visual">
+            <div class="depth-column">
+              <div class="zone-slice sunlight" data-depth="200m"><span>Sunlight Zone</span></div>
+              <div class="zone-slice twilight" data-depth="1,000m"><span>Twilight Zone</span></div>
+              <div class="zone-slice midnight" data-depth="4,000m"><span>Midnight Zone</span></div>
+              <div class="zone-slice abyssal" data-depth="6,000m"><span>Abyssal Zone</span></div>
+              <div class="zone-slice hadal" data-depth="11,000m"><span>Hadal Zone</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-creatures">
+      <div class="container">
+        <h2 class="section-title centered">Featured <em>Inhabitants</em></h2>
+        <div class="creature-grid">
+        <a href="creatures.html" class="creature-card">
+    <img src="images/giant-squid.jpg" alt="Giant Squid">
+    <h3>Giant Squid</h3>
+    <p>The sea monster of legend, reaching 13 meters in length.</p>
+    <span class="creature-depth">600 – 1,000m</span>
+</a>
+          
+<a href="creatures.html" class="creature-card">
+    <img src="images/dumbo-octopus.jpg" alt="Dumbo Octopus">
+    <h3>Dumbo Octopus</h3>
+    <p>Named for its ear-like fins, it glides through the abyss.</p>
+    <span class="creature-depth">3,000 – 4,000m</span>
+</a>
+
+ <a href="creatures.html" class="creature-card">
+    <img src="images/anglerfish.jpg" alt="Anglerfish">
+    <h3>Anglerfish</h3>
+    <p>A living lantern luring prey in the perpetual midnight.</p>
+    <span class="creature-depth">200 – 2,000m</span>
+</a>
+<a href="creatures.html" class="creature-card">
+    <img src="images/Crystal-Jellyfish.jpg" alt="Crystal Jellyfish">
+    <h3>Crystal Jellyfish</h3>
+    <p>Bioluminescent and nearly invisible in open water.</p>
+    <span class="creature-depth">0 – 500m</span>
+</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h2>Explorer <em>Reviews</em></h2>
+      <p>What our community of ocean enthusiasts say.</p>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <img src="images/pic-1.png" alt="John Doe">
+          <div class="stars">    <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+</div>
+          <p>"An incredible journey through the ocean depths. Absolutely mesmerizing."</p>
+          <h4>John Doe</h4>
+        </div>
+        <div class="review-card">
+          <img src="images/pic-2.png" alt="Anna Smith">
+          <div class="stars">  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  
+</div>
+          <p>"Beautiful design and fascinating information about the deep sea."</p>
+          <h4>Anna Smith</h4>
+        </div>
+        <div class="review-card">
+          <img src="images/pic-3.png" alt="Michael Brown">
+          <div class="stars">  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  
+</div>
+          <p>"The best ocean website I've ever encountered. Truly stunning."</p>
+          <h4>Michael Brown</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to Dive Deeper?</h2>
+          <p>Join our expeditions or explore our interactive ocean atlas to discover what lies beneath.</p>
+          <div class="cta-buttons">
+            <a href="expeditions.html" class="btn btn-primary">View Expeditions</a>
+            <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-icon">⬡</span>
+          <strong>DeepSea Explorer</strong>
+          <p>Illuminating the darkness since 2024.</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="zones.html">Ocean Zones</a>
+          <a href="creatures.html">Creatures</a>
+          <a href="expeditions.html">Expeditions</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="box">
+          <h3>Follow</h3>
+          <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Deep Ocean Explorer. All depths reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

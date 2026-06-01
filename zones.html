@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ocean Zones — Deep Ocean Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-zones">
+
+  <div class="ocean-bg">
+    <div class="bubble" style="--x:15%;--d:10s;--s:0.4rem;--delay:1s"></div>
+    <div class="bubble" style="--x:35%;--d:8s;--s:0.5rem;--delay:0s"></div>
+    <div class="bubble" style="--x:60%;--d:12s;--s:0.3rem;--delay:2s"></div>
+    <div class="bubble" style="--x:80%;--d:9s;--s:0.6rem;--delay:3s"></div>
+    <div class="light-ray" style="--rx:30%;--rr:-10deg;--ro:0.06"></div>
+    <div class="light-ray" style="--rx:65%;--rr:15deg;--ro:0.04"></div>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span>DeepSea</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="zones.html" class="active">Ocean Zones</a></li>
+      <li><a href="creatures.html">Creatures</a></li>
+      <li><a href="expeditions.html">Expeditions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="page-hero">
+      <div class="container">
+        <p class="hero-eyebrow">Stratified by Depth &amp; Light</p>
+        <h1>The Ocean <em>Zones</em></h1>
+        <p class="page-hero-sub">The ocean is divided into distinct vertical layers — each with unique conditions, pressures, temperatures, and inhabitants.</p>
+      </div>
+    </header>
+
+    <section class="zones-section">
+      <div class="container">
+        <div class="zone-timeline">
+
+          <article class="zone-entry" id="sunlight">
+            <div class="zone-marker">
+              <div class="zone-dot"></div>
+              <div class="zone-line"></div>
+            </div>
+            <div class="zone-content sunlight-card">
+              <div class="zone-badge">0 – 200m</div>
+              <h2>☀️ Sunlight Zone</h2>
+              <p class="zone-latin">Epipelagic</p>
+              <p>The topmost layer, flooded with sunlight. This is where photosynthesis occurs, powering nearly all oceanic food webs. Temperatures range from 3°C to 30°C depending on latitude. The vast majority of ocean life — and all marine plants — live here.</p>
+              <ul class="zone-facts">
+                <li><strong>Light:</strong> Full sunlight penetrates</li>
+                <li><strong>Pressure:</strong> 1 – 20 atm</li>
+                <li><strong>Temperature:</strong> 3°C – 30°C</li>
+                <li><strong>Life:</strong> Coral reefs, sharks, dolphins, tuna, plankton</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="zone-entry" id="twilight">
+            <div class="zone-marker">
+              <div class="zone-dot"></div>
+              <div class="zone-line"></div>
+            </div>
+            <div class="zone-content twilight-card">
+              <div class="zone-badge">200 – 1,000m</div>
+              <h2>🌑 Twilight Zone</h2>
+              <p class="zone-latin">Mesopelagic</p>
+              <p>Only faint blue light filters into this realm. Bioluminescence begins here — creatures light up to communicate, hunt, and evade predators. Many animals migrate vertically each day, rising at night to feed in shallower waters.</p>
+              <ul class="zone-facts">
+                <li><strong>Light:</strong> Dim, fading to none</li>
+                <li><strong>Pressure:</strong> 20 – 100 atm</li>
+                <li><strong>Temperature:</strong> 4°C – 8°C</li>
+                <li><strong>Life:</strong> Lanternfish, hatchetfish, squid, siphonophores</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="zone-entry" id="midnight">
+            <div class="zone-marker">
+              <div class="zone-dot"></div>
+              <div class="zone-line"></div>
+            </div>
+            <div class="zone-content midnight-card">
+              <div class="zone-badge">1,000 – 4,000m</div>
+              <h2>🌊 Midnight Zone</h2>
+              <p class="zone-latin">Bathypelagic</p>
+              <p>Total, absolute darkness. No sunlight has ever reached here. The cold is near-freezing and pressure is enormous. Life slows down — yet strange creatures have adapted, many with enormous eyes, fang-like teeth, and bodies that absorb almost all light.</p>
+              <ul class="zone-facts">
+                <li><strong>Light:</strong> None — absolute darkness</li>
+                <li><strong>Pressure:</strong> 100 – 400 atm</li>
+                <li><strong>Temperature:</strong> 2°C – 4°C</li>
+                <li><strong>Life:</strong> Anglerfish, viperfish, giant squid, sperm whales</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="zone-entry" id="abyssal">
+            <div class="zone-marker">
+              <div class="zone-dot"></div>
+              <div class="zone-line"></div>
+            </div>
+            <div class="zone-content abyssal-card">
+              <div class="zone-badge">4,000 – 6,000m</div>
+              <h2>🌌 Abyssal Zone</h2>
+              <p class="zone-latin">Abyssopelagic</p>
+              <p>The vast abyssal plains stretch across 60% of Earth's surface. They are covered in fine sediment — "marine snow" — drifting down from above. Hydrothermal vents here support entire ecosystems independent of the sun, powered by chemosynthesis.</p>
+              <ul class="zone-facts">
+                <li><strong>Light:</strong> None</li>
+                <li><strong>Pressure:</strong> 400 – 600 atm</li>
+                <li><strong>Temperature:</strong> 0°C – 3°C</li>
+                <li><strong>Life:</strong> Sea cucumbers, sea spiders, snailfish, vent tube worms</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="zone-entry last" id="hadal">
+            <div class="zone-marker">
+              <div class="zone-dot hadal-dot"></div>
+            </div>
+            <div class="zone-content hadal-card">
+              <div class="zone-badge">6,000 – 11,034m</div>
+              <h2>💀 Hadal Zone</h2>
+              <p class="zone-latin">Hadalpelagic — The Trenches</p>
+              <p>Named after Hades, the underworld. Found only in ocean trenches — the deepest scars on Earth's crust. The Mariana Trench's Challenger Deep reaches 11,034m — deeper than Everest is tall. Pressure here is 1,000× atmospheric. And yet, life persists.</p>
+              <ul class="zone-facts">
+                <li><strong>Light:</strong> None</li>
+                <li><strong>Pressure:</strong> 600 – 1,100 atm</li>
+                <li><strong>Temperature:</strong> 1°C – 4°C</li>
+                <li><strong>Life:</strong> Amphipods, snailfish (deepest fish known), foraminifera</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-icon">⬡</span>
+          <strong>DeepSea Explorer</strong>
+          <p>Illuminating the darkness since 2024.</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="zones.html">Ocean Zones</a>
+          <a href="creatures.html">Creatures</a>
+          <a href="expeditions.html">Expeditions</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">&copy; 2026 Deep Ocean Explorer. All depths reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

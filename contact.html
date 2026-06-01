@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Contact — Deep Ocean Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-contact">
+
+  <div class="ocean-bg">
+    <div class="bubble" style="--x:12%;--d:10s;--s:0.4rem;--delay:0s"></div>
+    <div class="bubble" style="--x:38%;--d:13s;--s:0.6rem;--delay:2s"></div>
+    <div class="bubble" style="--x:65%;--d:9s;--s:0.35rem;--delay:1s"></div>
+    <div class="bubble" style="--x:82%;--d:11s;--s:0.5rem;--delay:3s"></div>
+    <div class="light-ray" style="--rx:40%;--rr:0deg;--ro:0.07"></div>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">⬡</span>
+      <span>DeepSea</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="zones.html">Ocean Zones</a></li>
+      <li><a href="creatures.html">Creatures</a></li>
+      <li><a href="expeditions.html">Expeditions</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="page-hero">
+      <div class="container">
+        <p class="hero-eyebrow">Send a Signal from the Surface</p>
+        <h1>Get in <em>Touch</em></h1>
+        <p class="page-hero-sub">Based in Tbilisi, Georgia. We welcome inquiries from travelers, researchers, students, and ocean enthusiasts around the world.</p>
+      </div>
+    </header>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <h2>Dive Into <em>Conversation</em></h2>
+            <p>Our team of oceanographers, researchers, and deep-sea enthusiasts are always eager to connect with people who share our passion for the deep.</p>
+
+            <div class="info-cards">
+              <div class="info-card">
+                <i class="fas fa-location-dot"></i>
+                <div>
+                  <strong>Head Office</strong>
+                  <p>Tbilisi, Georgia<br>Rustaveli Avenue 12, 0108</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <p>info@deepoceanexplorer.ge</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <strong>Phone</strong>
+                  <p>+995 555 123 456</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <strong>Working Hours</strong>
+                  <p>Monday – Friday<br>09:00 – 18:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contactForm" novalidate>
+              <fieldset>
+                <legend>Your Details</legend>
+
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" id="fullName" name="fullName"
+                    placeholder="e.g. Nino Beridze" required autocomplete="name" />
+                  <span class="field-error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email"
+                    placeholder="you@ocean.org" required autocomplete="email" />
+                  <span class="field-error" id="emailError"></span>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="phone">Phone (optional)</label>
+                    <input type="tel" id="phone" name="phone"
+                      placeholder="(+995) 000-0000" autocomplete="tel" />
+                  </div>
+                  <div class="form-group">
+                    <label for="org">Organization</label>
+                    <input type="text" id="org" name="organization"
+                      placeholder="NOAA, MBARI, etc." />
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Your Message</legend>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject">
+                    <option value="" disabled selected>Choose a topic…</option>
+                    <option value="research">Research Collaboration</option>
+                    <option value="expedition">Join an Expedition</option>
+                    <option value="media">Media &amp; Press</option>
+                    <option value="education">Education &amp; Outreach</option>
+                    <option value="general">General Inquiry</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message"
+                    placeholder="Tell us what's on your mind — or what's lurking in the depths of your curiosity…"
+                    rows="5" required></textarea>
+                  <span class="field-error" id="messageError"></span>
+                  <span class="char-count" id="charCount">0 / 500</span>
+                </div>
+
+                <div class="form-group checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="newsletter" id="newsletter" />
+                    <span class="checkbox-custom"></span>
+                    Subscribe to our deep-sea dispatch newsletter
+                  </label>
+                </div>
+              </fieldset>
+
+              <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                <span class="btn-text">Send Transmission</span>
+                <span class="btn-loading" hidden>Sending…</span>
+              </button>
+
+              <div class="form-success" id="formSuccess" hidden>
+                <span class="success-icon">🌊</span>
+                <strong>Message received from the surface!</strong>
+                <p>We'll respond within 24–48 hours. Dive deeper while you wait — explore our <a href="creatures.html">Creatures Gallery</a>.</p>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-icon">⬡</span>
+          <strong>DeepSea Explorer</strong>
+          <p>Illuminating the darkness since 2024.</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="zones.html">Ocean Zones</a>
+          <a href="creatures.html">Creatures</a>
+          <a href="expeditions.html">Expeditions</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">&copy; 2026 Deep Ocean Explorer. All depths reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
