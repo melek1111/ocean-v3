@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Deep Sea Creatures — Deep Ocean Explorer</title>
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="page-creatures">
@@ -45,13 +47,37 @@
     <section class="filter-section">
       <div class="container">
         <div class="filter-bar">
-          <button class="filter-btn active" data-filter="all">All Creatures</button>
+           <!-- <button class="filter-btn active" data-filter="all">All Creatures</button>
           <button class="filter-btn" data-filter="bioluminescent">✨ Bioluminescent</button>
           <button class="filter-btn" data-filter="predator">🦷 Predators</button>
           <button class="filter-btn" data-filter="deep">🌑 Ultra-Deep</button>
-          <button class="filter-btn" data-filter="weird">👁️ Bizarre</button>
+          <button class="filter-btn" data-filter="weird">👁️ Bizarre</button> -->
+          <button class="filter-btn active" data-filter="all">
+  <i class="fas fa-water"></i>
+  All Creatures
+</button>
+
+<button class="filter-btn" data-filter="bioluminescent">
+  <i class="fas fa-lightbulb"></i>
+  Bioluminescent
+</button>
+
+<button class="filter-btn" data-filter="predator">
+  <i class="fas fa-skull"></i>
+  Predators
+</button>
+
+<button class="filter-btn" data-filter="deep">
+  <i class="fas fa-moon"></i>
+  Ultra-Deep
+</button>
+
+<button class="filter-btn" data-filter="weird">
+  <i class="fas fa-eye"></i>
+  Bizarre
+</button>
         </div>
-      </div>
+      </div> 
     </section>
 
     <section class="creatures-gallery">

@@ -324,6 +324,14 @@ nav, main, footer {
   filter: drop-shadow(0 0 8px var(--biolum));
 }
 
+.mission-icon i{
+    font-size:3rem;
+    color:#00d4ff;
+    text-shadow:
+      0 0 10px #00d4ff,
+      0 0 20px #00d4ff;
+}
+
 @keyframes spin-slow {
   to { transform: rotate(360deg); }
 }
@@ -877,6 +885,8 @@ nav, main, footer {
   background: linear-gradient(90deg, transparent, var(--biolum), transparent);
 }
 
+
+
 .zone-slice {
   position: relative;
   padding: 1.4rem 1.8rem;
@@ -1386,6 +1396,12 @@ nav, main, footer {
   letter-spacing: -0.01em;
 }
 
+.zone-content h2 i{
+    color:#00d4ff;
+    font-size:1.2em;
+    filter:drop-shadow(0 0 8px #00d4ff);
+}
+
 .zone-latin {
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -1714,6 +1730,10 @@ nav, main, footer {
   border-radius: 100px;
   display: inline-block;
   border: 1px solid rgba(0, 255, 204, 0.18);
+}
+.exp-tag i{
+    color:#00d4ff;
+    font-size:0.9rem;
 }
 
 .upcoming-section { padding: 3rem 0 9rem; }
@@ -2048,6 +2068,13 @@ nav, main, footer {
 }
 
 .checkbox-label input:checked + .checkbox-custom::after { opacity: 1; }
+
+.info-icon{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
 
 .form-success {
   margin-top: 1.8rem;
